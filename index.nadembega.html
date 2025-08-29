@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Cybersécurité - Mon Profil</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b') center/cover no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .progress {
+      height: 20px;
+      background: #e9ecef;
+    }
+    .progress-bar {
+      width: 0;
+      transition: width 2s;
+    }
+    .project-card {
+      display: none;
+      cursor: pointer;
+    }
+    .counter {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+.scroll-text {
+  max-height: 100px; /* Hauteur visible avant scroll */
+  overflow-y: auto;
+  text-align: justify;
+  padding-right: 5px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Garde les proportions originales */
+}
+
+.card {
+  height: 100%;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Mon Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#ctf">CTF</a></li>
+        <li class="nav-item"><a class="nav-link" href="#bugbounty">Bug Bounty</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header>
+  <div class="profile-pic">
+    <img src="r.jpg" alt="Photo de profil">
+  </div>
+  <h1 class="display-5 fw-bold">NADEMBEGA ROMARIC</h1>
+  <p class="lead">Etudiant en master en sécurité des systèmes d'informations</p>
+  <p class="lead">👨‍💻 Portfolio Cybersécurité</p>
+  <p>CTF • Pentest • Bug Bounty • Cyberdéfense</p>
+</header>
+
+<!-- CTF Section -->
+<section id="ctf" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">🏆 Mes CTF</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <p>HackTheBox</p>
+        <div class="counter" data-target="50">0</div>
+      </div>
+      <div class="col-md-3">
+        <p>TryHackMe</p>
+        <div class="counter" data-target="10">0</div>
+      </div>
+      <div class="col-md-3">
+        <p>RootMe</p>
+        <div class="counter" data-target="10">0</div>
+      </div>
+      <div class="col-md-3">
+        <p>PicoCTF</p>
+        <div class="counter" data-target="10">0</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Attestations & Certificats Section -->
+<section id="certificats" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">📜 Attestations & Certificats</h2>
+    <div class="row g-4">
+      <!-- Exemple de certificat -->
+
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="cert1.png" class="card-img-top cert-img" alt="Certificat 1" style="cursor:pointer;">
+          <div class="card-body text-center">
+            <h6 class="card-title">CERTIFICAT DE COMPETENCES</h6>
+            <div class="scroll-text">
+            <p class="card-text"><h8>Attestation de réussite à une formation spécialisée en gestion des opérations de surveillance et de contre-espionnage. Elle témoigne d’une maîtrise des techniques d’analyse, de contrôle et de sécurisation de l’information sensible.</h8></p>
+          </div>
+        </div>
+       </div>
+       </div>
+
+
+
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="cert2.jpg" class="card-img-top cert-img" alt="Certificat 2" style="cursor:pointer;">
+          <div class="card-body text-center">
+          <h6 class="card-title">CERTIFICAT DE COMPETENCES</h6>
+          <div class="scroll-text">
+            <p class="card-text"><h8>Certification officielle validant mes compétences en supervision réseau avec Nagios. Elle atteste de ma capacité à déployer, configurer et maintenir des systèmes de monitoring robustes pour garantir la disponibilité des infrastructures.</h8></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+     <div class="col-md-4">
+       <div class="card shadow">
+         <img src="cert3.png" class="card-img-top cert-img" alt="Certificat 2" style="cursor:pointer;">
+           <div class="card-body text-center">
+              <h6 class="card-title">CERTIFICAT DE COMPETENCES</h6>
+                <div class="scroll-text">
+                <h8>
+          Formation introductive aux fondamentaux de la cybersécurité : gestion des risques, protection des données, et bonnes pratiques en environnement numérique.<br><br>
+          Une base solide pour toute démarche de sécurisation informatique.
+                 </h8>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <div class="col-md-4">
+  <div class="card shadow">
+    <img src="cert4.jpg" class="card-img-top cert-img" alt="Certificat 2" style="cursor:pointer;">
+    <div class="card-body text-center">
+      <h6 class="card-title">CERTIFICAT DE COMPETENCES</h6>
+      <div class="scroll-text">
+        <h8>
+          Reconnaissance de mon engagement actif lors d’une compétition organisée par l’IST et MERADIS BURKINA.<br><br>
+          J'ai été le lauréat du deuxième prix, confirmant ainsi mon niveau d’excellence.
+        </h8>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card shadow">
+    <img src="cert5.png" class="card-img-top cert-img" alt="Certificat 2" style="cursor:pointer;">
+    <div class="card-body text-center">
+      <h6 class="card-title">CERTIFICAT DE COMPETENCES</h6>
+      <div class="scroll-text">
+        <h8>
+          Ce document officiel délivré par GSIMEL atteste que Nadembegha Romaric a brillamment complété une formation en "Introduction à la sécurité informatique".<br><br>
+          Formation validée le 18 décembre 2014.
+        </h8>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+      <!-- Ajoute les autres certificats comme ça -->
+    </div>
+  </div>
+</section>
+
+<!-- Modal pour agrandir l'image -->
+<div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0">
+        <img id="modalImage" src="" class="img-fluid w-100 rounded">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script pour gérer le clic -->
+<script>
+  document.querySelectorAll('.cert-img').forEach(img => {
+    img.addEventListener('click', function() {
+      document.getElementById('modalImage').src = this.src;
+      new bootstrap.Modal(document.getElementById('imgModal')).show();
+    });
+  });
+</script>
+
+
+
+
+
+<!-- Bug Bounty Section -->
+<section id="bugbounty" class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">🔎 Bug Bounties</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card shadow">
+          <div class="card-body text-center">
+            <i class="fa-brands fa-hacker-news fa-3x mb-3"></i>
+            <h5>HackerOne</h5>
+            <p>2 vulnérabilités validées</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-bug fa-3x mb-3"></i>
+            <h5>BugCrowd</h5>
+            <p>1 vulnérabilité critique trouvée</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-shield-halved fa-3x mb-3"></i>
+            <h5>YesWeHack</h5>
+            <p>3 rapports acceptés</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projets" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">💻 Projets Sécurité</h2>
+    <div class="text-center mb-4">
+      <button class="btn btn-dark filter-btn" data-filter="all">Tous</button>
+      <button class="btn btn-outline-dark filter-btn" data-filter="pentest">Pentest</button>
+      <button class="btn btn-outline-dark filter-btn" data-filter="dev">Développement</button>
+    </div>
+    <div class="row g-4">
+  <div class="col-md-4 project-card pentest">
+    <a href="pdf2.pdf" target="_blank" class="text-decoration-none">
+      <div class="card shadow position-relative">
+        <!-- Petit bandeau en haut à droite -->
+        <span class="badge bg-primary position-absolute top-0 end-0 m-2">📄 Voir le rapport tèchnique</span>
+        
+        <div class="card-body">
+          <h5 class="card-title">Audit Web</h5>
+          <p>Analyse complète d’une application interne (SQLi, XSS, CSRF).</p>
+        </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 project-card dev">
+        <a href="SIEM_Maison.pdf" target="_blank" class="text-decoration-none">
+          <div class="card shadow">
+<a href="N" download class="position-relative d-inline-block text-decoration-none">
+  <span class="badge bg-primary position-absolute top-0 end-0 m-2">📥 Télécharger le dossier</span>
+</a>
+            <div class="card-body">
+              <h5 class="card-title">SIEM Maison</h5>
+              <p>Développement d’un mini SIEM Python pour collecter et corréler des logs.</p>
+            </div>
+          </div>
+        
+      </div>
+      <div class="col-md-4 project-card pentest">
+        <a href="pdf1.pdf" target="_blank" class="text-decoration-none">
+          <div class="card shadow">
+            <span class="badge bg-primary position-absolute top-0 end-0 m-2">📄 Voir le rapport tèchnique</span>
+            <div class="card-body">
+              <h5 class="card-title">Exercice Red Team</h5>
+              <p>Simulation d’attaque interne et rapport détaillé pour la DSI.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">⚡ Compétences</h2>
+    <div class="mb-3">
+      <label>Pentest Web</label>
+      <div class="progress"><div class="progress-bar bg-success" data-skill="90"></div></div>
+    </div>
+    <div class="mb-3">
+      <label>Réseaux & Systèmes</label>
+      <div class="progress"><div class="progress-bar bg-info" data-skill="80"></div></div>
+    </div>
+    <div class="mb-3">
+      <label>Développement Sécurité</label>
+      <div class="progress"><div class="progress-bar bg-warning" data-skill="70"></div></div>
+    </div>
+    <div class="mb-3">
+      <label>Forensic & Malware</label>
+      <div class="progress"><div class="progress-bar bg-danger" data-skill="60"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-dark text-white text-center">
+  <div class="container">
+    <h2 class="fw-bold">📩 Me Contacter</h2>
+    <p>Email : <a href="nadembegaromaric11@gmail.com" class="text-white">nadembegaromaric11@gmail.com</a></p>
+    <p>facebook : <a href="https://www.facebook.com/share/19teCacJDe/?mibextid=wwXIfr" class="text-white">NADEMBEGA Romaric</a></p>
+    <p>LinkedIn : <a href="https://www.linkedin.com/in/romaric-nadembega-8791542a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="text-white">NADEMBEGA Romaric</a></p>
+  </div>
+<p>Whatsapp : <a href="https://wa.me/+22676900142
+" class="text-white">NADEMBEGA Romaric</a></p>
+  </div>
+
+
+</section>
+
+<!-- Bootstrap JS + Script perso -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Compteurs CTF
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const speed = 50;
+      const inc = target / 100;
+      if (count < target) {
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(updateCount, speed);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
+
+  // Progress bars animation
+  const progressBars = document.querySelectorAll('.progress-bar');
+  window.addEventListener('scroll', () => {
+    progressBars.forEach(bar => {
+      const value = bar.getAttribute('data-skill');
+      const pos = bar.getBoundingClientRect().top;
+      if (pos < window.innerHeight) {
+        bar.style.width = value + '%';
+      }
+    });
+  });
+
+  // Filtrage projets
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project-card');
+  projects.forEach(p => p.style.display = "block"); // afficher au départ
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+      projects.forEach(project => {
+        if (filter === "all" || project.classList.contains(filter)) {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
